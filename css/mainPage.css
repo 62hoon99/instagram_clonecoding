@@ -1,0 +1,136 @@
+body{
+    background: #fafafa;
+}
+
+#header{
+    width: 100%; /* 공중에 뜨기위해 */
+    position: absolute; /* 가장 위에 올라가 있어야 하기 위해 */
+    z-index: 999;
+    left: 0; top: 0;
+    background: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#header .inner{ /* inner 안에 컨텐츠를 넣으면 안에 값이 들어옴 */
+    width: 975px;
+    height: 77px;
+    margin: 0 auto; /* 위아래 여백 없이 가로 중앙에 배치되는 서식 */
+	display: flex; /* 가로 배치 */
+	justify-content: space-between; /* x축 정렬_공간을 자동으로 분배함 */
+	align-items: center; /* y축 정렬 */
+}
+
+#header .inner .logo > a{
+    color: transparent;
+}
+
+#header .inner .logo div{
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#header .inner .logo .sprite_write_logo{
+	position: relative; /* after에게 위치 기준을 전달해주기 위해 */
+	margin-right: 30px;
+}
+
+#header .inner .logo .sprite_write_logo::after{
+	position: absolute;
+	right: -15px;
+	top: 0;
+}
+
+#header .search_box{
+	position: relative;
+}
+
+#search-field{
+	width: 185px;
+	height: 28px;
+	background: #fafafa;
+	border: 1px solid #dbdbdb;
+	border-radius: 3px;
+	padding: 3px 30px;
+	color: #999;
+	font-weight: 400;
+	text-align: left;
+	font-size: 14px;
+	outline: none;
+}
+
+#header .search_box .fake_field{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	pointer-events: none;
+}
+
+#header .search_box .fake_field{
+	transform: translate(-110px, -5px);
+}
+
+#search-field:focus~.fake_field > div:nth-child(1){
+	display: none;
+}
+
+#header .right_icons{
+	width: 222px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: relative;
+	right: 80px;
+}
+
+#header .inner .right_icons div{
+	display: inline-block;
+}
+
+.sprite_write_logo {
+	background: url('../images/background01.png') no-repeat -94px -72px;
+	width: 103px;
+	height: 29px;
+}
+
+.sprite_small_search_icon {
+	background: url('../images/background01.png') no-repeat -337px -246px;
+	width: 10px;
+	height: 10px;
+}
+
+.sprite_black_house_icon {
+	background: url('../images/background01.png') no-repeat -78px -260px;
+	width: 24px;
+	height: 24px;
+}
+
+.sprite_direct_message_icon {
+	background: url('../images/background01.png') no-repeat -156px -235px;
+	width: 24px;
+	height: 21px;
+}
+
+.sprite_new_post_icon {
+	background: url('../images/background01.png') no-repeat -297px -234px;
+	width: 23px;
+	height: 23px;
+}
+
+.sprite_compass_icon {
+	background: url('../images/background01.png') no-repeat -130px -286px;
+	width: 23px;
+	height: 23px;
+}
+
+.sprite_empty_hart_icon {
+	background: url('../images/background01.png') no-repeat -52px -261px;
+	width: 24px;
+	height: 22px;
+}
+
+.sprite_empty_human_icon {
+	background: url('../images/background01.png') no-repeat -272px -182px;
+	width: 22px;
+	height: 24px;
+}
