@@ -81,7 +81,6 @@ body{
 	justify-content: space-around;
 	align-items: center;
 	position: relative;
-	right: 30px;
 }
 
 #header .inner .right_icons div{
@@ -124,10 +123,15 @@ body{
 	height: 23px;
 }
 
-.sprite_empty_hart_icon {
-	background: url('../images/background01.png') no-repeat -52px -261px;
+.sprite_empty_hart_icon img{
 	width: 24px;
 	height: 22px;
+}
+
+.sprite_empty_hart_icon img:hover{
+	width: 24px;
+	height: 22px;
+	background-color: #8e8e8e;
 }
 
 .sprite_empty_human_icon {
@@ -142,10 +146,17 @@ body{
 	height: 3px;
 }
 
-.sprite_bubble_icon {
+.bubble_btn div:hover {
 	background: url('../images/background01.png') no-repeat -239px -202px;
 	width: 24px;
 	height: 24px;
+}
+
+.sprite_bubble_icon{
+	background: url('../images/comment.png');
+	width: 24px;
+	height: 24px;
+	background-size: contain;
 }
 
 .sprite_share_icon {
@@ -166,10 +177,16 @@ body{
 	height: 11px;
 }
 
-.sprite_paper_airpalne{
+.paper_airplane_btn div:hover{
 	background: url('../images/background01.png') no-repeat -156px -235px;
 	width: 24px;
 	height: 21px;
+}
+
+.sprite_paper_airpalne{
+	background: url('../images/background02.png') no-repeat -79px -401px;
+	width: 22px;
+	height: 20px;
 }
 
 article{
@@ -444,6 +461,7 @@ aside{
 }
 
 .user_profile_id2{
+	margin-top: 8px;
 	margin-left: 10px;
 	font-size: 12px;
 	color: #8e8e8e;
@@ -519,7 +537,7 @@ aside{
 	flex-direction: column;
 	align-items: flex-start;
 	position: relative;
-	margin-bottom: 16px;
+	margin-bottom: 1;
 }
 
 .other_box ul li{

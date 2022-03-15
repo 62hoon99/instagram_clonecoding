@@ -7,8 +7,7 @@
 
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/mainPage.css">
-    <script src="../js/mainPage.js"></script>
-
+    <link rel="stylesheet" href="../css/feed_more_modal.css">
 </head>
 
 <body>
@@ -35,7 +34,7 @@
                     <div class="sprite_direct_message_icon"></div>
                     <div class="sprite_new_post_icon"></div>
                     <div class="sprite_compass_icon"></div>
-                    <div class="sprite_empty_hart_icon"></div>
+                    <div class="sprite_empty_hart_icon_bold"></div>
                     <div class="sprite_empty_human_icon"></div>
                 </div>
             </section>
@@ -71,7 +70,9 @@
                                         <div class="country">Seoul, South Korea</div>
                                     </div>
                                 </div>
-                                <div class="sprite_more_icon" data-name="more"></div>
+                                <div class="feed_more_bttn">
+                                    <div class="sprite_more_icon"></div>
+                                </div>
                             </header>
 
                             <div class="img_section">
@@ -85,10 +86,18 @@
                             <div class="feed_bottom_icons">
                                 <div class="left_icons">
                                     <div class="heart_btn">
-                                        <div class="sprite_empty_hart_icon" name="39" data-name="heartbeat"></div>
+                                        <div class="sprite_empty_hart_icon"><img id="empty_hart"
+                                                src="../images/heart.png" alt="">
+                                        </div>
+                                        <div class="sprite_gray_hart_icon"></div>
+                                        <div class="sprite_red_hart_icon" data-name="heartbeat"></div>
                                     </div>
-                                    <div class="sprite_bubble_icon"></div>
-                                    <div class="sprite_paper_airpalne" data-name="share"></div>
+                                    <div class="bubble_btn">
+                                        <div class="sprite_bubble_icon"></div>
+                                    </div>
+                                    <div class="paper_airplane_btn">
+                                        <div class="sprite_paper_airpalne" data-name="share"></div>
+                                    </div>
                                 </div>
 
                                 <div class="right_icon">
@@ -184,7 +193,29 @@
             </aside>
         </section>
         <!-- body -->
+
+        <!-- modal -->
+        <div class="feed_more_modal">
+            <div class="modal-wrapper">
+
+                <div class="modal">
+
+                    <button class="text_red">신고</button>
+                    <button class="text_red">팔로우 취소</button>
+                    <button>게시물로 이동</button>
+                    <button>공유 대상...</button>
+                    <button>링크 복사</button>
+                    <button>퍼가기</button>
+                    <button class="feed_more_close">취소</button>
+
+                </div>
+
+            </div>
+        </div>
     </section>
+
+    <script src="../js/mainPage.js"></script>
+    <script src="../js/feed_more_modal.js"></script>
 </body>
 
 </html>
