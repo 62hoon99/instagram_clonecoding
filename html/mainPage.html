@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/mainPage.css">
     <link rel="stylesheet" href="../css/feed_more_modal.css">
+    <link rel="stylesheet" href="../css/feed_detail_modal.css">
 </head>
 
 <body>
@@ -34,7 +35,7 @@
                     <div class="sprite_direct_message_icon"></div>
                     <div class="sprite_new_post_icon"></div>
                     <div class="sprite_compass_icon"></div>
-                    <div class="sprite_empty_hart_icon_bold"></div>
+                    <div class="sprite_empty_hart_icon"></div>
                     <div class="sprite_empty_human_icon"></div>
                 </div>
             </section>
@@ -52,6 +53,38 @@
                                     <div class="story_userId">
                                         <img src="../images/profile_img2.jpg" alt="프로필">
                                         <span>kihoonyou</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sub_story">
+                                    <div class="story_userId">
+                                        <img src="../images/인스타기본프사.png">
+                                        <span>user1</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sub_story">
+                                    <div class="story_userId">
+                                        <img src="../images/인스타기본프사.png" alt="프로필">
+                                        <span>user2</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sub_story">
+                                    <div class="story_userId">
+                                        <img src="../images/인스타기본프사.png" alt="프로필">
+                                        <span>user3</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sub_story">
+                                    <div class="story_userId">
+                                        <img src="../images/인스타기본프사.png" alt="프로필">
+                                        <span>user4</span>
                                     </div>
                                 </div>
                             </li>
@@ -85,30 +118,24 @@
 
                             <div class="feed_bottom_icons">
                                 <div class="left_icons">
-                                    <div class="heart_btn">
-                                        <div class="sprite_empty_hart_icon"><img id="empty_hart"
-                                                src="../images/heart.png" alt="">
-                                        </div>
-                                        <div class="sprite_gray_hart_icon"></div>
-                                        <div class="sprite_red_hart_icon" data-name="heartbeat"></div>
+                                    <div class="hart_icon">
+                                        <img src="../images/하트.png" alt="" class="hart_img" data-clicked="0">
                                     </div>
-                                    <div class="bubble_btn">
-                                        <div class="sprite_bubble_icon"></div>
+                                    <div class="bubble_icon">
+                                        <img src="../images/말풍선.png" alt="" class="bubble_img">
                                     </div>
-                                    <div class="paper_airplane_btn">
-                                        <div class="sprite_paper_airpalne" data-name="share"></div>
+                                    <div class="airplane_icon">
+                                        <img src="../images/종이비행기.png" alt="">
                                     </div>
                                 </div>
 
                                 <div class="right_icon">
-                                    <div class="sprite_bookmark_icon" data-name="bookmark"></div>
+                                    <img src="../images/bookmark.png" alt="" data-clicked="0" class="bookmark_img">
                                 </div>
                             </div>
 
                             <div class="likes">
-                                좋아요
-                                <div id="count">38</div>
-                                개
+                                좋아요 38개
                             </div>
 
                             <div class="comment_container">
@@ -124,6 +151,78 @@
                             <div class="timer">1시간 전</div>
 
                             <div class="comment_field">
+                                <div class="smile_icon">
+                                    <img src="../images/smile.png" alt="">
+                                </div>
+                                <input type="text" placeholder="댓글달기...">
+                                <div class="upload_btn">게시</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contents_box">
+                        <div class="contents">
+                            <header class="top">
+                                <div class="user_container">
+                                    <div class="profile_img">
+                                        <img src="../images/인스타기본프사.png" alt="프로필">
+                                    </div>
+                                    <div class="user_name">
+                                        <div class="userId">user4</div>
+                                        <div class="country">Seoul, South Korea</div>
+                                    </div>
+                                </div>
+                                <div class="feed_more_bttn">
+                                    <div class="sprite_more_icon"></div>
+                                </div>
+                            </header>
+
+                            <div class="img_section">
+                                <div class="trans_inner">
+                                    <div>
+                                        <img src="../images/feed_img2.jpg" alt="피드게시물">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="feed_bottom_icons">
+                                <div class="left_icons">
+                                    <div class="hart_icon">
+                                        <img src="../images/하트.png" alt="" class="hart_img" data-clicked="0">
+                                    </div>
+                                    <div class="bubble_icon">
+                                        <img src="../images/말풍선.png" alt="" class="bubble_img">
+                                    </div>
+                                    <div class="airplane_icon">
+                                        <img src="../images/종이비행기.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="right_icon">
+                                    <img src="../images/bookmark.png" alt="" data-clicked="0" class="bookmark_img">
+                                </div>
+                            </div>
+
+                            <div class="likes">
+                                좋아요 32개
+                            </div>
+
+                            <div class="comment_container">
+                                <div class="comment">
+                                    <div class="userId">5doong2</div>
+                                    <div>~~~</div>
+                                </div>
+                                <div class="small_heart">
+                                    <div class="sprite_small_heart_icon_outline"></div>
+                                </div>
+                            </div>
+
+                            <div class="timer">1시간 전</div>
+
+                            <div class="comment_field">
+                                <div class="smile_icon">
+                                    <img src="../images/smile.png" alt="">
+                                </div>
                                 <input type="text" placeholder="댓글달기...">
                                 <div class="upload_btn">게시</div>
                             </div>
@@ -148,16 +247,44 @@
                             <div class="comment">모두 보기</div>
                         </header>
 
-                        <div class="user">
-                            <div class="user_profile_box">
-                                <img src="../images/calmdownman.jpg" alt="친구프로필">
-                            </div>
-                            <div class="user_profile_main_box">
-                                <div class="user_profile_id_box">
-                                    <div class="user_profile_id1">calmdownman</div>
-                                    <div class="user_profile_id2">chimSuJa님 외 8명이 팔로우합니다</div>
+                        <div class="friend_container">
+                            <div class="friend">
+                                <div class="user_profile_box">
+                                    <img src="../images/calmdownman.jpg" alt="친구프로필">
                                 </div>
-                                <div class="follow">팔로우</div>
+                                <div class="user_profile_main_box">
+                                    <div class="user_profile_id_box">
+                                        <div class="user_profile_id1">calmdownman</div>
+                                        <div class="user_profile_id2">instagram 신규 가입</div>
+                                    </div>
+                                    <div class="follow">팔로우</div>
+                                </div>
+                            </div>
+
+                            <div class="friend">
+                                <div class="user_profile_box">
+                                    <img src="../images/인스타기본프사.png" alt="친구프로필">
+                                </div>
+                                <div class="user_profile_main_box">
+                                    <div class="user_profile_id_box">
+                                        <div class="user_profile_id1">user5</div>
+                                        <div class="user_profile_id2">회원님을 위한 추천</div>
+                                    </div>
+                                    <div class="follow">팔로우</div>
+                                </div>
+                            </div>
+
+                            <div class="friend">
+                                <div class="user_profile_box">
+                                    <img src="../images/인스타기본프사.png" alt="친구프로필">
+                                </div>
+                                <div class="user_profile_main_box">
+                                    <div class="user_profile_id_box">
+                                        <div class="user_profile_id1">user6</div>
+                                        <div class="user_profile_id2">회원님을 위한 추천</div>
+                                    </div>
+                                    <div class="follow">팔로우</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -194,28 +321,106 @@
         </section>
         <!-- body -->
 
-        <!-- modal -->
-        <div class="feed_more_modal">
-            <div class="modal-wrapper">
+    </section>
 
-                <div class="modal">
-
-                    <button class="text_red">신고</button>
-                    <button class="text_red">팔로우 취소</button>
-                    <button>게시물로 이동</button>
-                    <button>공유 대상...</button>
-                    <button>링크 복사</button>
-                    <button>퍼가기</button>
-                    <button class="feed_more_close">취소</button>
-
-                </div>
-
+    <!-- modal -->
+    <div class="feed_more_modal">
+        <div class="feed_more_modal_wrapper">
+            <div class="feed_more_modal_box">
+                <button class="text_red hi">신고</button>
+                <div class="line"></div>
+                <button class="text_red">팔로우 취소</button>
+                <div class="line"></div>
+                <button>게시물로 이동</button>
+                <div class="line"></div>
+                <button>공유 대상...</button>
+                <div class="line"></div>
+                <button>링크 복사</button>
+                <div class="line"></div>
+                <button>퍼가기</button>
+                <div class="line"></div>
+                <button class="feed_more_close">취소</button>
             </div>
         </div>
-    </section>
+    </div>
+
+    <div class="feed_detail_modal">
+        <div class="feed_detail_modal_wrapper">
+            <div class="feed_detail_modal_box">
+                <div class="feed_detail_left_container">
+                    <img src="../images/feed_img1.JPG" alt="">
+                </div>
+                <div class="feed_detail_right_container">
+                    <div class="detail_right_header">
+                        <div class="top">
+                            <div class="user_container">
+                                <div class="profile_img">
+                                    <img src="../images/인스타기본프사.png" alt="프로필">
+                                </div>
+                                <div class="user_name">
+                                    <div class="userId">user4</div>
+                                    <div class="country">Seoul, South Korea</div>
+                                </div>
+                                <div class="right_detail_follow">팔로잉</div>
+                            </div>
+                            <div class="feed_more_bttn">
+                                <div class="sprite_more_icon"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail_right_body">
+
+                    </div>
+                    <div class="detail_right_footer">
+                        <div class="feed_bottom_icons">
+                            <div class="left_icons">
+                                <div class="hart_icon">
+                                    <img src="../images/하트.png" alt="" class="hart_img" data-clicked="0">
+                                </div>
+                                <div class="bubble_icon">
+                                    <img src="../images/말풍선.png" alt="" class="bubble_img">
+                                </div>
+                                <div class="airplane_icon">
+                                    <img src="../images/종이비행기.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="right_icon">
+                                <img src="../images/bookmark.png" alt="" data-clicked="0" class="bookmark_img">
+                            </div>
+                        </div>
+
+                        <div class="likes">
+                            좋아요 32개
+                        </div>
+
+                        <div class="comment_container">
+                            <div class="small_heart">
+                                <div class="sprite_small_heart_icon_outline"></div>
+                            </div>
+                        </div>
+
+                        <div class="timer">1시간 전</div>
+
+                        <div class="comment_field">
+                            <div class="smile_icon">
+                                <img src="../images/smile.png" alt="">
+                            </div>
+                            <input type="text" placeholder="댓글달기...">
+                            <div class="upload_btn">게시</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="feed_detail_modal_close">
+            <img src="../images/창닫기.png" alt="">
+        </div>
+    </div>
 
     <script src="../js/mainPage.js"></script>
     <script src="../js/feed_more_modal.js"></script>
+    <script src="../js/feed_detail_modal.js"></script>
 </body>
 
 </html>
