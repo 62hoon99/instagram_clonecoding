@@ -84,3 +84,18 @@
     right: 0%;
     cursor: pointer;
 }
+
+.detail_top{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+}
+
+.detail_likes{
+	display: flex;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 5px 20px;
+	color: #262626;
+}
